@@ -143,15 +143,18 @@ body > main > section:nth-child(1){
     background-position: center;
     height: 650px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main > section:nth-child(1) > div{
+    width: 380px;
     text-align: center;
-    padding: 100px 450px;
 }
 
 /* IMAGE */
-main > div > img{
+main > section:nth-child(1) > div > img{
     width: 72px;
     height: 80px;
 }
@@ -310,6 +313,7 @@ main > section:nth-child(4) > div > ul > li{
     margin: 20px;
     font-size: 14px;
     color: #737373;
+    font-family: "Source Sans Pro";
 }
 
 
@@ -356,13 +360,128 @@ main > section:nth-child(6){
     position: relative;
 }
 
-main > section:nth-child(6) > div{
+main > section:nth-child(6) > div:nth-child(1){
     display: flex;
     flex-direction: column;
+    padding: 0 0 0 350px;
+    max-width: 300px;
 }
 
-body > main > section:nth-child(6) > div > img{
+/* ROUAGE */
+body > main > section:nth-child(6) > div:nth-child(1) > img{
+    height: 41px;
+    width: 41px;
+    margin: 70px 0 30px 0;
+}
+
+/* IMAGE */
+body > main > section:nth-child(6) > img{
     position: absolute;
     right: 200px;
-    height: 390px;
+    top: 80px;
+    height: 350px;
+}
+
+
+body > main > section:nth-child(6) > div:nth-child(1) > h1{
+    font-family: "Open Sans Condensed";;
+    font-size: 31px;
+}
+
+body > main > section:nth-child(6) > div:nth-child(1) > p{
+    font-family: "Source Sans Pro";
+    color: #505050;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+body > main > section:nth-child(6) > div:nth-child(3){
+    padding: 0 0px 0 350px;
+}
+
+body > main > section:nth-child(6) > div:nth-child(3) > img:nth-child(4){
+    width: 190px;
+    height: 53px;
+}
+
+
+
+
+/* --------------------FOOTER-------------------- */
+
+
+footer{
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+}
+
+footer > div{
+    width: 350px;
+    padding: 50px 0 15px 100px; 
+    list-style: none;
+}
+
+/* LOGO */
+footer > div > img{
+    height: 64px;
+    width: auto;
+}
+
+/* PARAGRAPHE */
+footer > div > p{
+    font-family: "Source Sans Pro";
+    color: #959595;
+    font-size: 13px;
+    padding: 15px 0;
+    border-bottom: solid;
+    border-color: #959595;
+    border-width: thin;
+    margin-bottom: 15px;
+}
+
+/* LIEN */
+footer > div > div > li{
+    display: inline;
+    font-size: 13px;
+}
+
+/* RESEAU SOCIAUX */
+footer > div > div > li > a{
+    text-decoration: none;
+    color: #959595;
+}
+
+/* --------------------MQ-------------------- */
+
+
+@media screen and (max-width: 1230px){
+    body > header > div > a > img{
+        margin: 5px 0px;
+        float: left;
+        height: 74px;
+    }
+       
+}
+
+@media screen and (max-width: 1075px){
+    body > header > div > a > img{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    body > header > nav > ul > li:nth-child(9){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+
+    
+
+    
 }
